@@ -21,8 +21,7 @@ Update the username, password, server, and mailbox variables in the script with 
 
 ## Usage
 Run the script:
-
-	```python
+	
 	python send_autoreply_mail.py
 
 ## How It Works
