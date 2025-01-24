@@ -20,8 +20,7 @@ account = Account(primary_smtp_address=mailbox, config=config, autodiscover=Fals
 
 # Preglej neprebana sporočila v zadnjih 20 minutah
 timezone = pytz.timezone('Europe/Ljubljana')  # Adjust the timezone as needed
-end_time = datetime.now(timezone)
-start_time = end_time - timedelta(minutes=20)
+start_time = datetime.now(timezone) - timedelta(minutes=20)
 
 # Pridobi vsa neprebana sporočila iz mape Prejeto, ki niso označena kategorijo 'replied'
 inbox = account.inbox
